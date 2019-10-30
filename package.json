@@ -1,0 +1,22 @@
+{
+  "name": "node_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanDaley/node_client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanDaley/node_client/issues"
+  },
+  "homepage": "https://github.com/EvanDaley/node_client#readme",
+  "dependencies": {
+    "moodle-client": "^0.5.2"
+  }
+}
