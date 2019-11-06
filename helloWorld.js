@@ -1,5 +1,7 @@
 // FOR REFERENCE
 // THIS SCRIPT HITS THE HELLO WORLD WEBSERVICE
+// For this to work you need to provide a specific 'shortname' to the hello world service.
+// select * from mdl_external_services where component = 'local_wstemplate', update the shortname to 'hello_world'
 // Run with 'npm run hello'
 
 var moodle_client = require("moodle-client");

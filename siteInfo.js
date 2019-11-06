@@ -15,7 +15,6 @@ var logger = winston.createLogger({
 
 moodle_client.init({
     wwwroot: "http://localhost/",
-    // token: "d457b5e5b0cc31c05ccf38628e4dfc14"
     username: "admin",
     password: "MoodlePassword1!",
     logger: logger,
