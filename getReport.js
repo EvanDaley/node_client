@@ -25,20 +25,27 @@ moodle_client.init({
 });
 
 function getLog(client) {
-    queryObject = {
+    const queryObject = {
         withCount: true,
         debug: true,
+        joinWithGroups: true,
         desiredColumns: [
-            'id', 'eventname'
+            'mdl_logstore_standard_log.id', 'eventname'
         ],
         dateRange: {
             start: 1571541618,
-            end: 1572573859,
+            end: 1972573859,
         },
-        exactMatches: {
-            eventname: '\\\\core\\\\event\\\\user_login_failed',
-            userid: '2',
-        }
+        where: {
+            // 'mdl_logstore_standard_log.eventname': '\\\\core\\\\event\\\\user_login_failed',
+            // 'mdl_logstore_standard_log.userid': 2,
+            'mdl_groups_members.groupid': 2
+        },
+        whereIn: {
+            'mdl_logstore_standard_log.userid': ['1','2','3']
+        },
+        page: 1,
+        pageSize: 100,
     }
 
     console.log('\nQUERY:', JSON.stringify(queryObject))
