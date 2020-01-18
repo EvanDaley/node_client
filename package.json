@@ -8,7 +8,8 @@
     "start": "node index",
     "info": "node siteInfo",
     "hello": "node helloWorld",
-    "report": "node getReport"
+    "report": "node getReport",
+    "sethook": "node setWebhookState"
   },
   "repository": {
     "type": "git",
