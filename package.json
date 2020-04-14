@@ -9,7 +9,8 @@
     "info": "node siteInfo",
     "hello": "node helloWorld",
     "report": "node getReport",
-    "sethook": "node setWebhookState"
+    "sethook": "node setWebhookState",
+    "feed": "node feedbackHelper"
   },
   "repository": {
     "type": "git",
